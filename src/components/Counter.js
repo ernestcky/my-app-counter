@@ -11,10 +11,12 @@ export default class Counter extends Component {
 
     onIncrease = () => {
         this.setState((prevState) => ({ number: prevState.number + 1 }));
+        this.props.onChangeValue(1);
     };
 
     onDecrease = () => {
         this.setState((prevState) => ({ number: prevState.number - 1 }));
+        this.props.onChangeValue(-1);
     };
 
     render() {
