@@ -29,8 +29,6 @@ export default class CounterGroup extends Component {
         const counterArr = initArraySize.map((value) => (
             <Counter key={value} onChangeValue={this.handleValueUpdate} />
         ));
-        console.log(counterArr);
-        console.log(this.state);
         return (
             <div>
                 <CounterGroupSum sum={this.state.sum}/>
