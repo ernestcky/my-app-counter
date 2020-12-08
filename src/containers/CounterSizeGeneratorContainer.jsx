@@ -1,4 +1,4 @@
-import CounterSizeGenerator from "../components/CounterSizeGenerator";
+import CounterSizeGenerator from "../components/CounterSizeGenerator.jsx";
 import { connect } from "react-redux";
 import { changeSize, reset } from "../actions";
 

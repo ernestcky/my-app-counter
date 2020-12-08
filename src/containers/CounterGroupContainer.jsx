@@ -1,4 +1,4 @@
-import CounterGroup from '../components/CounterGroup';
+import CounterGroup from '../components/CounterGroup.jsx';
 import { connect } from "react-redux";
 
 // state = store 入面's state

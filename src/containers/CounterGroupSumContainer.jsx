@@ -1,4 +1,4 @@
-import CounterGroupSum from '../components/CounterGroupSum';
+import CounterGroupSum from '../components/CounterGroupSum.jsx';
 import { connect } from "react-redux";
 
 // state = store 入面's state

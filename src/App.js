@@ -1,5 +1,5 @@
 import './App.css';
-import MultiCounter from './components/MultiCounter.js';
+import MultiCounter from './components/MultiCounter.jsx';
 
 function App() {
   return (

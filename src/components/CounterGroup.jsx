@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import {v4 as uuidv4} from 'uuid';
-import CounterContainer from '../containers/CounterContainer'
+import CounterContainer from '../containers/CounterContainer.jsx'
 import CounterGroupSumContainer from '../containers/CounterGroupSumContainer.jsx';
 
 export default class CounterGroup extends Component {
