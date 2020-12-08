@@ -3,6 +3,7 @@ import Counter from './Counter.js';
 import CounterGroupSum from './CounterGroupSum.js';
 import {v4 as uuidv4} from 'uuid';
 import CounterContainer from '../containers/CounterContainer'
+import CounterGroupSumContainer from '../containers/CounterGroupSumContainer.jsx';
 
 export default class CounterGroup extends Component {
 
@@ -33,7 +34,7 @@ export default class CounterGroup extends Component {
         ));
         return (
             <div>
-                <CounterGroupSum sum={this.state.sum}/>
+                <CounterGroupSumContainer />
                 {counterArr}
             </div>
         );
