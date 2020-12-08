@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import Counter from './Counter.js';
 import CounterGroupSum from './CounterGroupSum.js';
+import {v4 as uuidv4} from 'uuid';
+import CounterContainer from '../containers/CounterContainer'
 
 export default class CounterGroup extends Component {
 
@@ -27,7 +29,7 @@ export default class CounterGroup extends Component {
         const size = this.props.size;
         const initArraySize = this.initArraySize(size);
         const counterArr = initArraySize.map((value) => (
-            <Counter key={value} onChangeValue={this.handleValueUpdate} />
+            <CounterContainer key={uuidv4()} onChangeValue={this.handleValueUpdate} />
         ));
         return (
             <div>
