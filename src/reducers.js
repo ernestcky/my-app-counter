@@ -1,10 +1,15 @@
-import { CHANGE_SIZE, CHANGE_SUM } from "./actionTypes";
+import { CHANGE_SIZE, CHANGE_SUM, RESET } from "./actionTypes";
 import { combineReducers } from "redux";
 
 const sum = (state = 0, action) => {
     if (action.type === CHANGE_SUM) {
         return state + action.payload;
     }
+
+    if (action.type === RESET) {
+        return 0;
+    }
+    
     return state;
 }
 

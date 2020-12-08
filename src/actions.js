@@ -1,4 +1,4 @@
-import { CHANGE_SIZE, CHANGE_SUM } from './actionTypes';
+import { CHANGE_SIZE, CHANGE_SUM, RESET } from './actionTypes';
 
 export const changeSum = (value) => {
     return {
@@ -11,5 +11,11 @@ export const changeSize = (size) => {
     return {
         type: CHANGE_SIZE,
         payload: size
+    }
+}
+
+export const reset = () => {
+    return {
+        type: RESET
     }
 }
